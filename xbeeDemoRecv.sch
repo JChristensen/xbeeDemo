@@ -12368,6 +12368,7 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="C2" library="_jc" deviceset="CPOL-US" device="E5-4" value="10µF"/>
 <part name="D3" library="_jc" deviceset="DIODE" device="1N4148" value="1N4148"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
+<part name="GND5" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12436,6 +12437,9 @@ XB24-Z7WIT-004</text>
 <instance part="D3" gate="G$1" x="76.2" y="91.44" rot="R90"/>
 <instance part="GND4" gate="1" x="63.5" y="76.2" smashed="yes">
 <attribute name="VALUE" x="60.96" y="73.66" size="1.778" layer="96"/>
+</instance>
+<instance part="GND5" gate="1" x="116.84" y="116.84" smashed="yes">
+<attribute name="VALUE" x="114.3" y="114.3" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -12513,6 +12517,12 @@ XB24-Z7WIT-004</text>
 <junction x="63.5" y="81.28"/>
 <wire x1="63.5" y1="81.28" x2="63.5" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="D7"/>
+<wire x1="129.54" y1="121.92" x2="116.84" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="121.92" x2="116.84" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -12605,10 +12615,10 @@ XB24-Z7WIT-004</text>
 <net name="N$16" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="D9"/>
-<wire x1="129.54" y1="114.3" x2="119.38" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="114.3" x2="121.92" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="M1" gate="G$1" pin="PULSE"/>
-<wire x1="109.22" y1="83.82" x2="119.38" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="83.82" x2="119.38" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="83.82" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="83.82" x2="121.92" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
